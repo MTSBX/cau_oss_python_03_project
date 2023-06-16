@@ -30,7 +30,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.parking_spot_manager">
+  <component name="RunManager" selected="Python.menu_selector">
     <configuration name="menu_selector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cau_oss_python_03_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,8 +75,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.parking_spot_manager" />
         <item itemvalue="Python.menu_selector" />
+        <item itemvalue="Python.parking_spot_manager" />
       </list>
     </recent_temporary>
   </component>
