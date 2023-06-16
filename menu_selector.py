@@ -27,7 +27,7 @@ def start_process(path):
             if select == 1:
                 keyword = input('type name:')
                 spots = parking_spot_manager.filter_by_name(spots, keyword)
-                # I named the spots as a link ，and by inputing the keword which user want to achieve the requirement like'1:name,2:city,3...4...5...' ,I can turn to the certain calling function。
+                #I named the spots as a link ，and by inputing the keword which user want to achieve the requirement like'1:name,2:city,3...4...5...' ,I can turn to the certain calling function。
             elif select == 2:
                 print("---filter by---")
                 print("[1] name")
@@ -39,8 +39,8 @@ def start_process(path):
                 if select == 1:
                     keyword = input('type name:')
                     filtered_list = parking_spot_manager.filter_by_name(path, keyword)
-                    # as same as above if user input 1,turn to the 'name'
-                    # this part from 1-5 in filter almost designed by myself , firstly it had some detail mistakes but referring to sample code that be searched on google and the PPT in e-class I made it.
+                    #as same as above if user input 1,turn to the 'name'
+                    #this part from 1-5 in filter almost designed by myself , firstly it had some detail mistakes but referring to sample code that be searched on google and the PPT in e-class I made it.
                 elif select == 2:
                     keyword = input('type city:')
                     filtered_list = parking_spot_manager.filter_by_city(path, keyword)
@@ -67,11 +67,12 @@ def start_process(path):
             print(keywords)
             keyword = input('type keyword:')
             if keyword in keywords:
-                print("not implemented yet")
-                # fill this block
-            else: print("invalid input")
+                spots = parking_spot_manager.sort_by_keyword(spots, keyword)
+                #match the keyword(input by user) into the keywords,so that I can fetch the result sorting with the keyword
+            else:
+                print("invalid input")
         elif select == 4:
-            print("Exit")  # if I press 4, the programme exited
+            print("Exit") # if I press 4, the programme exited
             break
         else:
             print("invalid input")
